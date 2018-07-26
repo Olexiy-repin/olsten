@@ -34,6 +34,7 @@ body {
 	padding-top: 1.25rem;
 	background-color: #e5e7f3;
 	text-align: center;
+	padding-bottom: 4rem;
 }
 
 .main-screen__header {
@@ -82,16 +83,117 @@ body {
 	font-size: 1.125rem;
 	text-align: center;
 	padding: 0 .3rem;
+	margin-bottom: 2rem;
+}
+
+.timer-container__description {
+	font-family: FuturaL;
+	font-size: 1.125rem;
+	margin-bottom: 1rem;
+}
+
+.timer-wrapper {
+	background-color: #fff;
+	padding: 1rem 0;
+	width: 288px;
+	margin: auto;
+}
+
+.timer-container__bottom-description {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-left: 2.5rem;
+	padding-right: 1.5rem;
+}
+
+.timer-container__bottom-description span {
+	letter-spacing: 3px;
+}
+
+.timer-container__timer {
+	font-family: FuturaD;
+	font-size: 1.5rem;
+}
+
+.timer-container__bottom-span {
+	font-family: FuturaL;
+	font-size: 0.625rem;
+}
+
+.main-screen__form-btn {
+	display: block;
+	margin: auto;
+	font-family: FuturaD;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: #3d7cef;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	width: 288px;
+	padding: 1rem 0;
+}
+
+.main-screen__form-btn:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	background-color: #0046c7;
+}
+
+.timer-container {
+	margin-bottom: 2rem;
+}
+
+.cost-container__top-text {
+	font-family: FuturaL;
+	font-size: 1.375rem;
+	position: relative;
+	text-align: center;
+	margin-bottom: .5rem;
+}
+
+.cost-container__top-text span {
+	position: relative;
+}
+
+.cost-container__top-text span::after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.4rem;
+	width: 4.7rem;
+	height: 2px;
+	background-color: #3d7cef;
+	-webkit-transform: rotate(-7deg);
+	transform: rotate(-7deg);
+}
+
+.cost-container__bottom-text {
+	text-align: center;
+	font-family: FuturaL;
+	font-size: 1.125rem;
+}
+
+.cost-container__bottom-text span:first-of-type {
+	font-family: FuturaD;
+	font-size: 60px;
+	color: #3d7cef;
+	margin-right: 1rem;
+}
+
+.cost-container__bottom-text span:last-of-type {
+	display: inline-block;
 }
 
 @media (min-width: 768px) {
-
-.main-screen {
-	background-image: url("img/main-screen/bg.png");
-	background-position-x: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 
 .main-screen__header {
 	display: -webkit-box;
@@ -124,18 +226,15 @@ body {
 }
 
 .main-screen__title {
-	text-align: left;
-	margin-bottom: 1rem;
-	padding: 0 .3rem;
-	padding-right: 21rem;
+	margin-bottom: 2rem;
 	line-height: 1.1;
+	padding: 0 8rem;
 }
 
 .main-screen__subtitle {
-	text-align: left;
-	padding: 0 .3rem;
-	padding-right: 24rem;
+	padding: 0 8rem;
 	line-height: 1.4;
+	margin-bottom: 3rem;
 }
 
 }
@@ -143,7 +242,12 @@ body {
 @media (min-width: 1200px) {
 
 .main-screen {
+	background-image: url("img/main-screen/bg.png");
+	background-position-x: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: top;
+	padding-bottom: 9.8rem;
 }
 
 .main-screen__header {
@@ -168,13 +272,63 @@ body {
 	padding: 0;
 	padding-right: 32rem;
 	margin-bottom: 2.8rem;
+	text-align: left;
 }
 
 .main-screen__subtitle {
+	text-align: left;
 	padding: 0;
 	padding-right: 42rem;
 	font-size: 1.25rem;
 	line-height: 1.3;
+	margin-bottom: 1.9rem;
+}
+
+.timer-container__description {
+	text-align: left;
+	margin-bottom: 1.3rem;
+}
+
+.timer-container__timer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-left: 2.8rem;
+	padding-right: 3.7rem;
+}
+
+.timer-wrapper {
+	padding: .8rem 0 1rem 0;
+	width: 359px;
+	margin: 0;
+}
+
+.timer-container__bottom-description {
+	padding-left: 2.8rem;
+	padding-right: 2.8rem;
+}
+
+.main-screen__form-btn {
+	width: 359px;
+	margin: 0;
+	padding: 1.2rem 0;
+	letter-spacing: 3.1px;
+}
+
+.timer-container {
+	margin-bottom: 3.1rem;
+}
+
+.cost-container__top-text {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.cost-container__bottom-text {
+	text-align: left;
 }
 
 }
