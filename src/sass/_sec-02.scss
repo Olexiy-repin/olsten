@@ -1,0 +1,82 @@
+.sec-02 {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  .row [class*=col-]:first-of-type {
+    margin-bottom: 3rem;
+  }
+}
+
+.sec-02__text-block-title {
+  font-family: FuturaD;
+  font-size: pxToRem(32px);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.sec-02__text-block-paragraph {
+  font-family: FuturaL;
+  font-size: pxToRem(18px);
+  line-height: 1.35;
+  span {
+    font-family: FuturaD;
+    color: #3d7cef;
+  }
+}
+
+@media (min-width: 768px) {
+  .sec-02 {
+    position: relative;
+    &::before {
+      display: block;
+      content: url("img/sec-02/logo.png");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .sec-02__text-block {
+    padding: 0 8rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sec-02 {
+    padding-top: 10.4rem;
+    padding-bottom: 6rem;
+    position: relative;
+    .row [class*=col-]:first-of-type {
+      margin-bottom: 0;
+    }
+    .row [class*=col-]:last-of-type {
+        .sec-02__text-block-title {
+          padding-right: 11rem;
+          padding-top: .3rem;
+          margin-bottom: 1.6rem;
+        }
+        .sec-02__text-block-title + .sec-02__text-block-paragraph {
+          padding-right: 3rem;
+        }
+    }
+    &::before {
+      top: 64%;
+      left: 50%;
+    }
+  }
+
+  .sec-02__text-block {
+    padding: 0;
+    text-align: left;
+  }
+
+  .sec-02__text-block-title {
+    padding-right: 5.2rem;
+    margin-bottom: 1.9rem;
+
+  }
+
+  .sec-02__text-block-paragraph {
+    padding-right: 5.3rem;
+  }
+}
