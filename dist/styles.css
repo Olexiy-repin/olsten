@@ -844,6 +844,14 @@ body {
 	font-size: .8rem;
 }
 
+#myModal .sec-06__form-input {
+	border-bottom: 1px solid #000;
+}
+
+#myModal .sec-06__form-input:focus {
+	border-bottom: 1px solid #0046c7;
+}
+
 .sec-06__form-input::-webkit-input-placeholder {
 	text-indent: 0px;
 	-webkit-transition: text-indent 0.3s ease;
@@ -890,6 +898,10 @@ body {
 	text-indent: 500px;
 	-webkit-transition: text-indent 0.3s ease;
 	transition: text-indent 0.3s ease;
+}
+
+.sec-06__form-input {
+	border-bottom: 1px solid #000;
 }
 
 .sec-06__form-input:focus {
