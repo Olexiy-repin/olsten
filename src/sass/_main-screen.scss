@@ -18,6 +18,10 @@
   font-size: pxToRem(16px);
   color: #000;
   margin-bottom: .5rem;
+  &:hover {
+    transition: all .5s linear;
+    opacity: .5;
+  }
   i {
     position: absolute;
     top: 0;

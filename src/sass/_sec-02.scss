@@ -1,4 +1,4 @@
-.sec-02 {
+.section-02 {
   padding-top: 4rem;
   padding-bottom: 3rem;
   .row [class*=col-]:first-of-type {
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 768px) {
-  .sec-02 {
+  .section-02 {
     position: relative;
     &::before {
       display: block;
@@ -42,7 +42,7 @@
 }
 
 @media (min-width: 1200px) {
-  .sec-02 {
+  .section-02 {
     padding-top: 10.4rem;
     padding-bottom: 6rem;
     position: relative;
